@@ -4,10 +4,6 @@ import Hello.core.AppConfig;
 import Hello.core.member.Grade;
 import Hello.core.member.Member;
 import Hello.core.member.MemberService;
-import Hello.core.member.MemberServiceImpl;
-import Hello.core.order.Order;
-import Hello.core.order.OrderService;
-import Hello.core.order.OrderServiceIpml;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

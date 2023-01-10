@@ -6,7 +6,7 @@ import Hello.core.member.MemberService;
 import Hello.core.member.MemberServiceImpl;
 import Hello.core.member.MemoryMemberRepository;
 import Hello.core.order.OrderService;
-import Hello.core.order.OrderServiceIpml;
+import Hello.core.order.OrderServiceImpl;
 import Hello.core.member.MemberRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,6 +31,6 @@ public class AppConfig {
 
     @Bean
     public OrderService orderService() {
-        return new OrderServiceIpml(memberRepository(), discountPolicy());
+        return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 }
